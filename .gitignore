@@ -9,8 +9,7 @@ env/
 .venv/
 
 # Django migration files (optional: you might track initial migrations)
-*/migrations/*.py[cod]
-*/migrations/__pycache__/
+*/migrations/*
 !*/migrations/__init__.py
 
 # Database files
