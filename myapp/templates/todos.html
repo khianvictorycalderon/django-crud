@@ -21,6 +21,9 @@
                 <a href="{% url 'edit_todo' todo.id %}" class="btn btn-sm btn-warning ml-2">
                     Edit
                 </a>
+
+                <!-- Delete button -->
+                <a href="{% url 'delete_todo' todo.id %}" class="btn btn-sm btn-danger ml-2">Delete</a>
             </li>
         {% endfor %}
     </ul>

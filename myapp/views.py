@@ -31,3 +31,13 @@ def edit_todo(request, pk):
         return redirect("Todos")
     
     return render(request, "edit_todo.html", { "form": form, "todo": todo })
+
+def delete_todo(request, pk):
+    # Get the todo or 404
+    todo = get_object_or_404(TodoItem, pk=pk)
+
+    if request.method == "POST":
+        todo.delete()
+        return redirect('Todos')  # back to list
+
+    return render(request, "delete_todo.html", {"todo": todo})
