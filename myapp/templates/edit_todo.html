@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Todo: {{ todo.title }}</h2>
+
+<form method="post" class="space-y-4">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <button class="btn btn-primary" type="submit">Update</button>
+</form>
+
+<a href="{% url 'Todos' %}" class="btn btn-link mt-3">Back</a>
+{% endblock %}

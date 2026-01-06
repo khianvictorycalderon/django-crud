@@ -16,6 +16,11 @@
                 {% else %}
                     Not Completed
                 {% endif %}
+
+                <!-- Edit button -->
+                <a href="{% url 'edit_todo' todo.id %}" class="btn btn-sm btn-warning ml-2">
+                    Edit
+                </a>
             </li>
         {% endfor %}
     </ul>
