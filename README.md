@@ -13,3 +13,8 @@ Testing of Create, Read, Update, and Delete using SQLite as database.
     - `py manage.py runserver 8001`
     - `python manage.py runserver 8002`
     8001 and 8002 are the port.
+
+## Admin
+1. To access the database using admin panel type in the url: "/admin"
+2. Run `py manage.py createsuperuser` then enter the email, username, and password you want to use
+3. You can edit your database now by logging in your account
