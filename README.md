@@ -22,3 +22,7 @@ Testing of Create, Read, Update, and Delete using SQLite as database.
 1. To access the database using admin panel type in the url: "/admin"
 2. Run `py manage.py createsuperuser` then enter the email, username, and password you want to use
 3. You can edit your database now by logging in your account
+
+## Prerequisites:
+Install the following first (globally) if you haven't installed it yet:
+- `pip install django`
