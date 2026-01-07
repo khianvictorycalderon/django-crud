@@ -8,11 +8,15 @@ Testing of Create, Read, Update, and Delete using SQLite as database.
     DJANGO_SECRET_KEY="your-key-here"
     DEBUG=True
     ```
-3. To run the server, run `py manage.py runserver` or `python manage.py runserver`
+3. Run the following command for database migration:
+    - `python manage.py makemigrations` or `py manage.py makemigrations`
+    - `python manage.py migrate` or `py manage.py migrate`
+4. To run the server, run `py manage.py runserver` or `python manage.py runserver`
     NOTE: If you encounter `Error: You don't have permission to access that port.`, just use a different port, for example:
     - `py manage.py runserver 8001`
     - `python manage.py runserver 8002`
     8001 and 8002 are the port.
+5. To create another app, just run `python manage.py startapp <app-name>` or `py manage.py startapp <app-name>`, example: `py manage.py startapp myapp`
 
 ## Admin
 1. To access the database using admin panel type in the url: "/admin"
