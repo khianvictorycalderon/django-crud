@@ -13,7 +13,7 @@ Testing of Create, Read, Update, and Delete using SQLite as database.
     DJANGO_ENV=development
     DJANGO_SECRET_KEY=your-key-here
     DEBUG=True
-    ALLOWED_HOSTS=localhost 127.0.0.1
+    ALLOWED_HOSTS=127.0.0.1 localhost https://apixer.vercel.app
     ```
 4. Run the following command for database migration:
     - `python manage.py makemigrations` or `py manage.py makemigrations`
