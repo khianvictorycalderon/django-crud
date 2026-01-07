@@ -15,6 +15,7 @@ Testing of Create, Read, Update, and Delete using SQLite as database.
     DEBUG=True
     ALLOWED_HOSTS=127.0.0.1 localhost https://apixer.vercel.app
     ```
+    Change the allowed credentials depending on where you want your project to be tested.
 4. Run the following command for database migration:
     - `python manage.py makemigrations` or `py manage.py makemigrations`
     - `python manage.py migrate` or `py manage.py migrate`
